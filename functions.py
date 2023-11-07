@@ -32,3 +32,19 @@ def sum(num1, num2=3):
 
 total =sum(2)
 print(total)
+
+
+# args uzywamy gdy nie zanmy ilosci paramtrow nalezy pamieatac ze zawsze zwroci nam to tupla
+def multiple_name(*args):
+    print(args)
+    print(type(args))
+
+multiple_name("Sara", "James")
+
+
+# kwagrs keywaords podajemy key i valu zwracam nam funkcja dicta
+def multi_name(**kwargs):
+    print(kwargs)
+    print(type(kwargs))
+
+multi_name(firs="Sara", last="James")
